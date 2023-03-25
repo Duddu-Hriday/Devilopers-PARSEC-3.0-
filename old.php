@@ -35,7 +35,7 @@
     <div style='display:flex;'>
     <input type="submit" value="submit" name="submit">
   </form>
-  <a class='hover-1' href='new.php' style='border:2px solid black;border-radius:20px;'>New User</a>
+  <a class='hover-1' href='new.php' style='border:2px solid black;'>New User</a>
 </div>
 </div>
 </body>
