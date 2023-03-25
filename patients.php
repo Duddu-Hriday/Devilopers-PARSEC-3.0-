@@ -67,7 +67,7 @@ if( $row = $result->num_rows > 0)
 {   echo "<table><tr><th>Patient Name</th><th>Phone Number</th><th>Gender</th><th>Date of Birth</th><th>Diabetes</th><th>Report</th><th>Dowload</th></tr>";
     while($row = $result->fetch_assoc())
     {
-        echo "<tr><td>".$row['name']."</td><td>".$row['pnumber']."</td><td>"."</td><td>".$row['gender']."</td><td>".$row['dob']."</td><td>"."</td><td>".$row['diabetes']."</td><td>".$row['report']."</td><td><a class='main' href='images/".$row['report']."'>Download</a></td></tr>";
+        echo "<tr><td>".$row['name']."</td><td>".$row['pnumber']."</td><td>".$row['gender']."</td><td>".$row['dob']."</td><td>".$row['diabetes']."</td><td>".$row['report']."</td><td><a class='main' href='images/".$row['report']."'>Download</a></td></tr>";
     }
 }
 }
