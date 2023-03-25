@@ -23,7 +23,7 @@
     <input type="text" id="name" name="name" placeholder="Your name.." required>
     <br><br>
     <label for="age">Age</label>
-    <input type="text" id="age" name="age" placeholder="Your Age.." required>
+    <input type="number" id="age" name="age" placeholder="Your Age.." required>
     <br><br>
     <label for="password">password</label>
     <input type="password" id="password" name="password" placeholder="Enter a password (Remember it!).." required>
@@ -43,7 +43,7 @@
     <input type="submit" value="submit" name="submit">
   </form>
   
-  <a class='hover-1' href='old.php' style='border:2px solid black;border-radius:20px;'>Existing User</a></div>
+  <a class='hover-1' href='old.php' style='border:2px solid black;'>Existing User</a></div>
 </div>
 </div>
 </body>
