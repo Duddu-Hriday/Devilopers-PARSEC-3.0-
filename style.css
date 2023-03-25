@@ -1,0 +1,193 @@
+header
+{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0px 10%;
+flex-wrap: wrap;
+border-bottom: 2px solid rgb(201, 191, 191);
+}
+.doc a {
+  position: absolute;
+  top: 80%;
+  /* bottom: 5%; */
+  left: 30%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  border: 2px solid black;
+  border-radius: 20px;
+  padding:15px;
+}
+.doc a :hover{
+  font-weight: bold;
+}
+.hover-1 {
+    
+    background: linear-gradient(#4c07ed 0 0) left / var(--p,0) no-repeat;
+    transition: .4s,background-position 0s;
+    text-decoration:none ;
+    color:black;
+    font-weight: bold;
+    padding:20px;
+    margin-left: 10px;
+    border-radius: 20px;
+    
+    
+  }
+  .hover-1:hover {
+    --p: 100%;
+    background-position: right;
+  }
+
+  .doc {
+    position: relative;
+    width: 100%;
+  }
+  
+  .doc img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .doc a {
+    position: absolute;
+    top: 80%;
+    /* bottom: 5%; */
+    left: 30%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    border: 2px solid black;
+    border-radius: 20px;
+    padding:15px;
+  }
+  .doc a :hover{
+    font-weight: bold;
+  }
+
+  .new1
+  {
+    display:flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+  }
+  .former
+  {
+    border: 1px solid black;
+    margin-left: 10%;
+    padding-top:10%;
+    padding-left:20%;
+    padding-right: 20%;
+    padding-bottom: 10%;
+  }
+
+
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+
+  input[type=password], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=number], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  input[type=submit] {
+    /* background-color: #251189;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer; */
+    background: linear-gradient(#4c07ed 0 0) left / var(--p,0) no-repeat;
+    transition: .4s,background-position 0s;
+    text-decoration:none ;
+    color:black;
+    font-weight: bold;
+    padding:20px 30px;
+    margin-left: 10px;
+    border-radius: 20px;
+  }
+  
+  input[type=submit]:hover {
+    /* background-color: #45a049; */
+    --p: 100%;
+    background-position: right;
+  }
+  
+  .container {
+    /* border:1px solid black; */
+    border-radius: 5px;
+    margin-left:10%;
+
+    /* background-color: #f2f2f2; */
+    padding: 20px;
+    /* flex-wrap: wrap; */
+  }
+
+  .det2 
+  {
+    background: linear-gradient(#4c07ed 0 0) left / var(--p,0) no-repeat;
+    transition: .4s,background-position 0s;
+    text-decoration:none ;
+    color:black;
+    font-weight: bold;
+    padding:20px;
+    margin-left: 10px;
+    border-radius: 20px;
+  }
+
+  .det2 :hover{
+    --p: 100%;
+    background-position: right;
+  }
+  .dat
+  {
+    text-align: center;
+  }
+  .dat a
+  {
+    background: linear-gradient(#4c07ed 0 0) left / var(--p,0) no-repeat;
+    transition: .4s,background-position 0s;
+    text-decoration:none ;
+    color:black;
+    font-weight: bold;
+    padding:20px;
+    margin-left: 10px;
+    border-radius: 20px;
+  }
+  .dat a:hover{
+    --p: 100%;
+    background-position: right;
+  }
+  .que
+  {
+    border:2px solid black;
+    border-radius: 20px;
+    background-color: rgb(147, 147, 209);
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+ 
