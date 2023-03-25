@@ -30,5 +30,5 @@ HOW TO RUN OUR PROJECT 'SMART-MED'
  
 🢂 Being an ADMIN, now you have access to the available doctors and patients .
 
-🢂 On any queries mail me at @ "hriday2702@gmail.com"
+🢂 On any queries mail me at @ "210010016@iitdh.ac.in"
 
