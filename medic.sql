@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 25, 2023 at 08:30 PM
+-- Generation Time: Mar 25, 2023 at 09:41 PM
 -- Server version: 10.4.27-MariaDB
--- PHP Version: 8.2.0
+-- PHP Version: 8.1.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -30,7 +30,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `appoint` (
   `id` int(11) NOT NULL,
   `name` varchar(255) NOT NULL,
-  `pnumber` int(11) NOT NULL,
+  `pnumber` varchar(255) NOT NULL,
   `gender` varchar(255) NOT NULL,
   `dob` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL,
@@ -62,6 +62,16 @@ CREATE TABLE `doctors` (
   `specialization` varchar(255) NOT NULL,
   `avail_time` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `doctors`
+--
+
+INSERT INTO `doctors` (`id`, `name`, `specialization`, `avail_time`) VALUES
+(1, 'Dr. Nishanth', 'Ophthalmology', '12:00 am to 2:00 am'),
+(2, 'Dr. Cheryala Rahul', 'Paediatrician', '5:00 pm to 7:00 pm'),
+(3, 'Dr. Duddu Hriday', 'ENT', '9:00 pm to 9:00 pm'),
+(4, 'Dr. Praneeth Karthikeya', 'Cardiologist', '10:00 pm to 12:00 am');
 
 -- --------------------------------------------------------
 
@@ -118,7 +128,7 @@ ALTER TABLE `my_admin`
 -- AUTO_INCREMENT for table `appoint`
 --
 ALTER TABLE `appoint`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `booked`
@@ -130,7 +140,7 @@ ALTER TABLE `booked`
 -- AUTO_INCREMENT for table `doctors`
 --
 ALTER TABLE `doctors`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `my_admin`
