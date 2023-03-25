@@ -28,7 +28,9 @@ $db="medic";
 $conn = new mysqli($servername, $username, $password,$db);
 
 $name=$_POST['name'];
-$age=$_POST['age'];
+$phone=$_POST['phone'];
+$gender=$_POST['gender'];
+$dob=$_POST['dob'];
 $diabetes=$_POST['diabetes'];
 $password=$_POST['password'];
 // $file=$_POST['file'];
@@ -47,7 +49,7 @@ if(isset($_POST["submit"]) && !empty($_FILES["file"]["name"])){
         // Upload file to server
         if(move_uploaded_file($_FILES["file"]["tmp_name"], $targetFilePath)){
             // Insert image file name into database
-            $sql = "INSERT into appoint (`id`,`name`,`age`,`password`,`diabetes`,`report`) VALUES ('', '$name','$age','$password','$diabetes','".$fileName."')";
+            $sql = "INSERT into appoint (`id`,`name`,`pnumber`,`gender`,`dob`,`password`,`diabetes`,`report`) VALUES ('', '$name','$phone','$gender','$dob','$password','$diabetes','".$fileName."')";
             if($conn->query($sql)){
                 echo "<div class='que'><h1 style='text-align:center;'>Your Data has been uploaded successfully.<h1><br><br>";
                 echo "<div class='dat'><a href='old.php'>Click Here To Login</a></div></div>";
@@ -63,7 +65,7 @@ if(isset($_POST["submit"]) && !empty($_FILES["file"]["name"])){
     }
 }else{
    echo '<div style="text-align:center;"><h2>Please select a file to upload.</h2><br><br>';
-    echo "<div class='dat'><a href='old.php' style='border:2px solid black;border-radius:0px;'>Get Back</a></div></div>";
+    echo "<div class='dat'><a href='new.php' style='border:2px solid black;border-radius:0px;'>Get Back</a></div></div>";
 }
 
 // Display status message
