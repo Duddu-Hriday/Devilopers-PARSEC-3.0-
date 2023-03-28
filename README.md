@@ -15,7 +15,7 @@ HOW TO RUN OUR PROJECT 'SMART-MED'
 
 🢂 Copy/Cut folder SmartMed to "C:\xampp\htdocs" folder .
 
-Create a database named "medic". 
+🢂 Create a database named "medic". 
 
 🢂 Import the "medic.sql" to "localhost/phpmyadmin/" .
 
